@@ -47,11 +47,13 @@ export function getResponsiveQuries(
     }
 
     for (const key of bpKeys) {
-        resault += `
-            ${mq[key]} {
-                ${proprety(input[key] ?? "")}
-            }
-        `;
+        if (input[key] != undefined) {
+            resault += `
+                ${mq[key]} {
+                    ${proprety(input[key] ?? "")}
+                }
+            `;
+        }
     }
 
     return resault;

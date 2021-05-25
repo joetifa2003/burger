@@ -38,8 +38,16 @@ function Hero() {
                             as="h1"
                             color="white"
                             bgColor="copperOverlay"
-                            fontSize="4rem"
-                            lineHeight="5rem"
+                            fontSize={{
+                                xs: "2.5rem",
+                                md: "3.5rem",
+                                xl: "4rem",
+                            }}
+                            lineHeight={{
+                                xs: "3.5rem",
+                                md: "4rem",
+                                xl: "5rem",
+                            }}
                             fontWeight="bold"
                             shadow
                         >
@@ -48,8 +56,13 @@ function Hero() {
                         <Text
                             as="p"
                             color="darkGreen"
-                            fontSize="3rem"
-                            lineHeight="3rem"
+                            fontSize={{
+                                xs: "2.5rem",
+                                md: "3rem",
+                            }}
+                            lineHeight={{
+                                lg: "3rem",
+                            }}
                             fontWeight="bold"
                             marginTop="1.5rem"
                         >
@@ -58,7 +71,7 @@ function Hero() {
                         <Button
                             marginTop={{
                                 xs: "2rem",
-                                md: "4rem",
+                                lg: "4rem",
                             }}
                         >
                             Learn more
@@ -70,7 +83,7 @@ function Hero() {
                                 right: 0;
                                 z-index: 0;
                             `}
-                            src="/images/blob.svg"
+                            src="/images/Blob.svg"
                         />
                     </Col>
                 </Grid>

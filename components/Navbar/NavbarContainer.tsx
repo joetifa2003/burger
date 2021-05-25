@@ -7,6 +7,7 @@ const NavbarContainer = styled(Container)`
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     ${mq.md} {
         justify-content: space-between;
