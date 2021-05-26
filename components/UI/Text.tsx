@@ -9,6 +9,7 @@ interface TextProps extends BaseProps {
     lineHeight?: Responsive;
     fontWeight?: Responsive;
     shadow?: boolean;
+    textAlign?: Responsive;
 }
 
 const Text = styled.div<TextProps>`
@@ -34,6 +35,13 @@ const Text = styled.div<TextProps>`
         getResponsiveQuries(
             props.fontWeight,
             (value) => `font-weight: ${value};`
+        )}
+
+        ${(props) =>
+        props.textAlign &&
+        getResponsiveQuries(
+            props.textAlign,
+            (value) => `text-align: ${value};`
         )}
 
     ${(props) =>

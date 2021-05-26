@@ -11,7 +11,7 @@ function Menu() {
         <Section fullScreen bgColor="darkGray" position="relative">
             <Header>Menu</Header>
             <Container>
-                <Grid columns={{ xs: "1fr", md: "6fr 6fr", lg: "4fr 4fr 4fr" }}>
+                <Grid columns={{ xs: "1fr", md: "6fr 6fr", xl: "4fr 4fr 4fr" }}>
                     <Col>
                         <Card
                             title="Burger 1"

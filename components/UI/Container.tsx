@@ -10,13 +10,17 @@ const Container = styled.div<ContainerProps>`
     display: flex;
     flex-direction: column;
 
-    width: 100%;
+    width: calc(100% - 2rem);
     min-height: 100%;
 
     overflow-x: hidden;
 
     margin-left: auto;
     margin-right: auto;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
 
     ${mq.sm} {
         max-width: 640px;

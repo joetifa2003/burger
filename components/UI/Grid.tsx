@@ -11,7 +11,7 @@ const Grid = styled.div<GridProps>`
     ${Base}
 
     display: grid;
-    grid-auto-rows: auto;
+    grid-auto-columns: auto;
     gap: ${(props) => props.gap || "2rem"};
 
     > * {

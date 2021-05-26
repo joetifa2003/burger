@@ -20,4 +20,8 @@ export const GlobalStyles = css`
     button {
         font-family: "Poppins", sans-serif;
     }
+
+    .menu-opend {
+        position: fixed;
+    }
 `;

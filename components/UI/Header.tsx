@@ -5,8 +5,7 @@ import Text from "./Text";
 const HeaderWrapper = styled.div`
     display: flex;
     width: 100%;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
@@ -56,9 +55,10 @@ function Header({ children }: { children: any }) {
                 </LineWrapper>
                 <div>
                     <Text
+                        as="h1"
+                        fontWeight="normal"
                         fontFamily="lobster"
-                        fontSize={{ xs: "6rem" }}
-                        lineHeight={{ xs: "6rem" }}
+                        fontSize={{ xs: "3rem", md: "4rem", lg: "6rem" }}
                         color="white"
                     >
                         {children}

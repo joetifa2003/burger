@@ -3,7 +3,7 @@ import { mq } from "components/UI/Responsive";
 
 const HamburgerMenuWrapper = styled.div`
     position: absolute;
-    right: 0;
+    right: 1rem;
 
     ${mq.md} {
         display: none;
