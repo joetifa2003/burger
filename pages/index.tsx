@@ -15,7 +15,13 @@ const SEO = {
 export default function Index() {
     return (
         <>
-            <NextSeo title={SEO.title} description={SEO.descreption} />
+            <NextSeo
+                title={SEO.title}
+                description={SEO.descreption}
+                openGraph={{
+                    images: [{ url: "/images/Seo.png" }],
+                }}
+            />
             <Navbar />
             <ScrollToTop />
             <Hero />
