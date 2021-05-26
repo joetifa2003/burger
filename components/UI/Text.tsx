@@ -1,8 +1,10 @@
+import { Theme } from "@emotion/react";
 import styled from "@emotion/styled";
 import { Base, BaseProps } from "components/Base";
 import { getResponsiveQuries, Responsive } from "./Responsive";
 
 interface TextProps extends BaseProps {
+    fontFamily?: keyof Theme["fonts"];
     fontSize?: Responsive;
     lineHeight?: Responsive;
     fontWeight?: Responsive;
@@ -10,6 +12,12 @@ interface TextProps extends BaseProps {
 }
 
 const Text = styled.div<TextProps>`
+    ${(props) =>
+        props.fontFamily &&
+        `
+        font-family: ${props.fontFamily};
+    `}
+
     ${(props) =>
         props.fontSize &&
         getResponsiveQuries(props.fontSize, (value) => `font-size: ${value};`)}

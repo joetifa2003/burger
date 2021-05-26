@@ -1,13 +1,13 @@
 import Hero from "components/Hero";
+import Menu from "components/Menu";
 import Navbar from "components/Navbar";
-import Section from "components/UI/Section";
 
 export default function Index() {
     return (
         <>
             <Navbar />
             <Hero />
-            <Section fullscreen></Section>
+            <Menu />
         </>
     );
 }

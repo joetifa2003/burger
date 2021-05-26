@@ -11,5 +11,8 @@ declare module "@emotion/react" {
             darkGreen: string;
             darkGray: string;
         };
+        fonts: {
+            lobster: string;
+        };
     }
 }

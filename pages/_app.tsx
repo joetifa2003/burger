@@ -13,6 +13,9 @@ const theme = {
         darkGreen: "#2A2106",
         darkGray: "#1D1D1D",
     },
+    fonts: {
+        lobster: `"Lobster"`,
+    },
 };
 
 function MyApp({ Component, pageProps }: AppProps) {

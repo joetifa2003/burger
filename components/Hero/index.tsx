@@ -11,7 +11,7 @@ import SideDiv from "./SideDiv";
 function Hero() {
     return (
         <Section
-            fullscreen
+            fullScreen
             position="relative"
             bgColor="nescafe"
             justifyContent="center"
