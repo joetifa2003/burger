@@ -5,6 +5,7 @@ import Text from "./Text";
 const HeaderWrapper = styled.div`
     display: flex;
     width: 100%;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     margin-left: auto;
     margin-right: auto;
