@@ -22,6 +22,6 @@ export const GlobalStyles = css`
     }
 
     .menu-opend {
-        position: fixed;
+        overflow: hidden;
     }
 `;

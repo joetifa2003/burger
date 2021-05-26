@@ -39,7 +39,8 @@ function Hero() {
                             color="white"
                             bgColor="copperOverlay"
                             fontSize={{
-                                xs: "2.5rem",
+                                xs: "2rem",
+                                sm: "2.5rem",
                                 md: "3.5rem",
                                 xl: "4rem",
                             }}
@@ -57,11 +58,14 @@ function Hero() {
                             as="p"
                             color="darkGreen"
                             fontSize={{
-                                xs: "2.5rem",
+                                xs: "2rem",
+                                sm: "2.5rem",
                                 md: "3rem",
                             }}
                             lineHeight={{
-                                lg: "3rem",
+                                xs: "2rem",
+                                sm: "2.5rem",
+                                md: "3rem",
                             }}
                             fontWeight="bold"
                             marginTop="1.5rem"

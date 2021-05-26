@@ -32,16 +32,44 @@ function Navbar() {
                     />
                 </HamburgerMenuWrapper>
                 <NavBarLinksWrapper>
-                    <NavbarLink>Home</NavbarLink>
-                    <NavbarLink>Menu</NavbarLink>
-                    <NavbarLink>Our chefs</NavbarLink>
+                    <NavbarLink
+                        to="Menu"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                    >
+                        Menu
+                    </NavbarLink>
+                    <NavbarLink
+                        to="Our chefs"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                    >
+                        Our chefs
+                    </NavbarLink>
                 </NavBarLinksWrapper>
             </NavbarContainer>
             <NavbarMenu opened={isNavbarMenuOpened}>
                 <NavbarLinksWrapperMobile>
-                    <NavbarLinkMobile>Home</NavbarLinkMobile>
-                    <NavbarLinkMobile>Menu</NavbarLinkMobile>
-                    <NavbarLinkMobile>Our chefs</NavbarLinkMobile>
+                    <NavbarLinkMobile
+                        to="Menu"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        onClick={() => setNavbarMenuOpend(false)}
+                    >
+                        Menu
+                    </NavbarLinkMobile>
+                    <NavbarLinkMobile
+                        to="Our chefs"
+                        spy={true}
+                        smooth={true}
+                        hashSpy={true}
+                        onClick={() => setNavbarMenuOpend(false)}
+                    >
+                        Our chefs
+                    </NavbarLinkMobile>
                 </NavbarLinksWrapperMobile>
             </NavbarMenu>
         </NavbarWrapper>

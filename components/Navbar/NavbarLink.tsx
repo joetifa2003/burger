@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
+import { Link } from "react-scroll";
 
-const NavbarLink = styled.div`
+const NavbarLink = styled(Link)`
     font-size: 1.5rem;
     line-height: 1.5rem;
     font-weight: bold;
