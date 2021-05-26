@@ -3,7 +3,7 @@ import Footer from "components/Sections/Footer";
 import Hero from "components/Sections/Hero";
 import Menu from "components/Sections/Menu";
 import OurChefs from "components/Sections/OurChefs";
-import ScrollToTop from "components/UI/ScrollToTop/Index";
+import ScrollToTop from "components/UI/ScrollToTop";
 import { NextSeo } from "next-seo";
 import { Element } from "react-scroll";
 
